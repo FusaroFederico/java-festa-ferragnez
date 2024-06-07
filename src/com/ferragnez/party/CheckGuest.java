@@ -12,6 +12,16 @@ public class CheckGuest {
 		// user input
 		System.out.println("Inserisci il tuo nome: ");
 		String userName = scanner.nextLine();
+		// check name variable
+		boolean checkName = false;
+		// for cycle to scroll through guestsList elements
+		for (int i=0; i < guestsList.length; i++) {
+			if (userName.toLowerCase() == guestsList[i].toLowerCase()) {
+				checkName = true;
+				break;
+			}
+		}
+		
 	}
 
 }
