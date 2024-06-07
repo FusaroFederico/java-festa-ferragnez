@@ -16,7 +16,7 @@ public class CheckGuest {
 		boolean checkName = false;
 		// for cycle to scroll through guestsList elements
 		for (int i=0; i < guestsList.length; i++) {
-			if (userName.toLowerCase() == guestsList[i].toLowerCase()) {
+			if (guestsList[i].toLowerCase().equals(userName.toLowerCase())) {
 				checkName = true;
 				break;
 			}
