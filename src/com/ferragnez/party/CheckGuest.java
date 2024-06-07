@@ -12,6 +12,7 @@ public class CheckGuest {
 		// user input
 		System.out.println("Inserisci il tuo nome: ");
 		String userName = scanner.nextLine();
+		scanner.close();
 		// check name variable
 		boolean checkName = false;
 		// for cycle to scroll through guestsList elements
@@ -21,7 +22,12 @@ public class CheckGuest {
 				break;
 			}
 		}
-		
+		// output: display if user can join the party
+				if (checkName) {
+					System.out.println("Puoi entrare. Il tuo nome è sulla lista.");
+				} else {
+					System.out.println("Mi dispiace, il tuo nome non è sulla lista. Non puoi entrare.");
+				}
 	}
 
 }
