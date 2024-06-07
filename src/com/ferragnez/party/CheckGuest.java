@@ -9,6 +9,9 @@ public class CheckGuest {
 		String[] guestsList = { "Dua Lipa", "Paris Hilton" , "Manuel Agnelli" , "J-Ax" , "Francesco Totti" , "Ilary Blasi" , "Bebe Vio" , "Luis" , "Pardis Zarei" , "Martina Maccherone" , "Rachel Zeilic" };
 		// new scanner instance 
 		Scanner scanner = new Scanner(System.in);
+		// user input
+		System.out.println("Inserisci il tuo nome: ");
+		String userName = scanner.nextLine();
 	}
 
 }
