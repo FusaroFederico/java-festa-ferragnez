@@ -15,13 +15,15 @@ public class CheckGuest {
 		scanner.close();
 		// check name variable
 		boolean checkName = false;
-		// for cycle to scroll through guestsList elements
-		for (int i=0; i < guestsList.length; i++) {
-			if (guestsList[i].toLowerCase().equals(userName.toLowerCase())) {
+		// counter initialization
+		int index = 0;
+		// do-while loop
+		do {
+			if (guestsList[index].toLowerCase().equals(userName.toLowerCase())) {
 				checkName = true;
-				break;
 			}
-		}
+			index += 1;
+		} while (!checkName && (index < guestsList.length));
 		// output: display if user can join the party
 				if (checkName) {
 					System.out.println("Puoi entrare. Il tuo nome è sulla lista.");
